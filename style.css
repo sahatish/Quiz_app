@@ -1,0 +1,166 @@
+/* ------------------------------------------------
+   GLOBAL PAGE SETUP
+--------------------------------------------------- */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+/* Center Container */
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+}
+
+/* ------------------------------------------------
+   GLASS CARD UI
+--------------------------------------------------- */
+.card {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 35px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  animation: fadeIn 0.8s ease;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Card Fade Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ------------------------------------------------
+   TITLE STYLING
+--------------------------------------------------- */
+.title {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ------------------------------------------------
+   TIMER
+--------------------------------------------------- */
+.timer {
+  font-size: 20px;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.25);
+  padding: 12px 18px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255,255,255,0.25);
+  box-shadow: 0 0 12px rgba(255,255,255,0.2);
+}
+
+/* ------------------------------------------------
+   QUESTION TEXT
+--------------------------------------------------- */
+.question-text {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 25px 0;
+  line-height: 1.4;
+}
+
+/* ------------------------------------------------
+   OPTION BUTTONS
+--------------------------------------------------- */
+.options .option {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 14px 20px;
+  margin: 12px 0;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  border: 1px solid rgba(255,255,255,0.25);
+  transition: 0.25s ease-in-out;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.options .option:hover {
+  background: rgba(255, 255, 255, 0.35);
+  transform: scale(1.03);
+}
+
+/* Selected Option */
+.selected {
+  background: linear-gradient(135deg, #00c6ff, #0072ff) !important;
+  border: 2px solid white;
+  color: #fff;
+  box-shadow: 0 0 18px #00c6ff;
+}
+
+/* ------------------------------------------------
+   NEXT BUTTON
+--------------------------------------------------- */
+.next-btn {
+  background: linear-gradient(45deg, #ffcc00, #ffdd33, #ffe680);
+  color: #333;
+  padding: 14px 25px;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 25px;
+  transition: 0.3s;
+  font-weight: 600;
+  box-shadow: 0 6px 15px rgba(255, 204, 0, 0.4);
+}
+
+.next-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(255, 204, 0, 0.6);
+}
+
+/* ------------------------------------------------
+   SCORE PAGE
+--------------------------------------------------- */
+.score {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.details {
+  font-size: 20px;
+  margin-top: 15px;
+  line-height: 1.6;
+}
+
+/* ------------------------------------------------
+   RESTART BUTTON
+--------------------------------------------------- */
+.restart-btn {
+  background: linear-gradient(135deg, #7efff5, #00ffd5);
+  color: #333;
+  padding: 14px 25px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 25px;
+  transition: 0.3s;
+  font-weight: 600;
+  box-shadow: 0 6px 15px rgba(0, 255, 213, 0.4);
+}
+
+.restart-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 255, 213, 0.6);
+}

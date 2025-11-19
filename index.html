@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dynamic Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div id="quiz-container" class="card">
+      <h1 class="title">✨ Dynamic Quiz Application ✨</h1>
+
+      <div id="timer" class="timer">⏳ Time Left: <span id="time">10</span>s</div>
+
+      <h2 id="question" class="question-text"></h2>
+
+      <div id="options" class="options"></div>
+
+      <!-- Updated Buttons -->
+      <button id="nextBtn" class="next-btn">Next Question ➜</button>
+      <button id="finishBtn" class="next-btn" style="display:none; background:#00e676;">Finish Quiz ✔</button>
+    </div>
+
+    <div id="result" class="card" style="display:none;">
+      <h1 class="title">🎉 Quiz Completed 🎉</h1>
+      <p id="score" class="score"></p>
+      <p id="details" class="details"></p>
+      <button class="restart-btn" onclick="location.reload()">Restart Quiz 🔄</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
